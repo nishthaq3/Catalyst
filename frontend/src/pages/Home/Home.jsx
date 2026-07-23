@@ -1,19 +1,10 @@
 import Navbar from "../../components/layout/Navbar";
-import Hero from "../../components/sections/Hero";
-import Features from "../../components/sections/Features";
-import Statistics from "../../components/sections/Statistics";
-import Footer from "../../components/layout/Footer";
 
 function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-[#08080B]">
       <Navbar />
-      <Hero />
-      <Features />
-      <Statistics />
-      <Footer />
-    </>
+    </div>
   );
 }
-
 export default Home;
