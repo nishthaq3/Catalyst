@@ -1,6 +1,7 @@
 import Navbar from "../../components/layout/Navbar";
 import Hero from "../../components/sections/Hero";
 import FeaturedHackathons from "../../components/sections/FeaturedHackathons";
+import UpcomingEvents from "../../components/sections/UpcomingEvents";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Navbar />
       <Hero />
       <FeaturedHackathons />
+      <UpcomingEvents />
     </div>
   );
 }

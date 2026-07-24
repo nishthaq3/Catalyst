@@ -1,6 +1,10 @@
 import hackathons from "../../data/hackathons";
 import HackathonCard from "../ui/HackathonCard";
 
+const featuredHackathons = hackathons.filter(
+	(hackathon) => hackathon.category === "featured"
+  );
+  
 function FeaturedHackathons() {
   return (
     <section className="bg-[#08080B] text-white py-20 px-8">
@@ -11,7 +15,7 @@ function FeaturedHackathons() {
         </h2>
 
         <div className="grid grid-cols-3 gap-8">
-          {hackathons.map((hackathon) => (
+          {featuredHackathons.map((hackathon) => (
             <HackathonCard
               key={hackathon.id}
               hackathon={hackathon}

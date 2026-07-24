@@ -6,6 +6,7 @@ const hackathons = [
 	  mode: "Online",
 	  prize: "₹1,00,000",
 	  date: "15 Aug 2026",
+	  category: "featured",
 	},
 	{
 	  id: 2,
@@ -14,6 +15,7 @@ const hackathons = [
 	  mode: "Offline",
 	  prize: "₹75,000",
 	  date: "22 Aug 2026",
+	  category: "upcoming",
 	},
 	{
 	  id: 3,
@@ -22,7 +24,16 @@ const hackathons = [
 	  mode: "Hybrid",
 	  prize: "₹2,00,000",
 	  date: "30 Aug 2026",
+	  category: "featured",
+	},
+	{
+	  id: 4,
+	  title: "Web3 Buildathon",
+	  organization: "Polygon",
+	  mode: "Online",
+	  prize: "₹1,50,000",
+	  date: "10 Sep 2026",
+	  category: "upcoming",
 	},
   ];
-  
   export default hackathons;
