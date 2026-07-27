@@ -4,6 +4,9 @@ import FeaturedHackathons from "../../components/sections/FeaturedHackathons";
 import UpcomingEvents from "../../components/sections/UpcomingEvents";
 import WhyParticipate from "../../components/sections/WhyParticipate";
 import Statistics from "../../components/sections/Statistics";
+import PreviousWinners from "../../components/sections/PreviousWinners";
+import Testimonials from "../../components/sections/Testimonials";
+import Footer from "../../components/layout/Footer";
 
 function Home() {
   return (
@@ -14,6 +17,9 @@ function Home() {
       <UpcomingEvents />
       <WhyParticipate />
       <Statistics />
+      <PreviousWinners />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
