@@ -20,8 +20,24 @@ function Signup() {
 
   // Handles form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
+	e.preventDefault();
+  
+	if (
+	  !formData.name ||
+	  !formData.email ||
+	  !formData.password ||
+	  !formData.confirmPassword
+	) {
+	  alert("Please fill all the fields.");
+	  return;
+	}
+  
+	if (formData.password !== formData.confirmPassword) {
+	  alert("Passwords do not match.");
+	  return;
+	}
+  
+	console.log(formData);
   };
 
   return (
